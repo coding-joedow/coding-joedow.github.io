@@ -16,7 +16,7 @@
 
 
 
-<title>归档: 2020/10 | BlueCitizen</title>
+<title>search | BlueCitizen</title>
 
 
 
@@ -146,22 +146,41 @@
     }
 </script>
         <div class="main">
-            <div class="post-wrap archive">
-    
-    
-        
-
-        
-            <h3>2020</h3>
-        
-
-        <article class="archive-item">
-            <a class="archive-item-link" href="/2020/10/30/my-first-blog/">my-first-blog</a>
-            <span class="archive-item-date">十月 30, 2020</span>
-        </article>
-    
-    
+            
+<div id="site_search">
+  <div class="form-group">
+  <input type="text" id="local-search-input" name="q" results="0" placeholder="搜索" class="st-search-input st-default-search-input form-control"/>
+  </div>  
+<div id="local-search-result"></div>
 </div>
+<script src="/js/jquery-3.4.1.min.js"></script> 
+<script src="/js/search.js"></script> 
+
+  <script type="text/javascript">      
+    var search_path = "search.xml";
+  if (search_path.length == 0) {
+    search_path = "search.xml";
+  }
+  var path = "/" + search_path;
+    searchFunc(path, 'local-search-input', 'local-search-result');
+  </script>
+
+
+
+<!-- <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input 
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+<script src="/js/search_ext.js"></script>  -->
         </div>
         <footer id="footer" class="footer">
     <div class="copyright">
