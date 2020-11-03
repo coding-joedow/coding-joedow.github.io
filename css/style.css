@@ -209,6 +209,7 @@ a:hover {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
+  box-sizing: border-box;
 }
 .navbar {
   height: 4rem;
@@ -1357,7 +1358,6 @@ header label {
 html,
 body {
   overflow-x: hidden;
-  white-space: nowrap;
 }
 .form-group {
   text-align: center;
