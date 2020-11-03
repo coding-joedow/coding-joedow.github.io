@@ -142,15 +142,9 @@ template {
 [hidden] {
   display: none;
 }
-@font-face {
-  font-family: 'lanting';
-  src: url("../fonts/lanting/lanting.eot"); /* IE9 */
-  src: url("../fonts/lanting/lanting.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */ url("../fonts/lanting/lanting.woff2") format('woff2'), url("../fonts/lanting/lanting.woff") format('woff'), url("../fonts/lanting/lanting.ttf") format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-  font-weight: 300;
-  font-display: swap;
-}
+@font-face {}
 html {
-  font-family: 'Microsoft Jhenghei', Lantinghei SC, 'lanting', PingFang SC, Seguo UI, Microsoft Yahei, Arial;
+  font-family: Arial, Microsoft Yahei, 'Microsoft Jhenghei', Lantinghei SC, 'lanting', PingFang SC, Seguo UI;
 }
 html::-webkit-scrollbar {
   width: 8px;
@@ -1359,4 +1353,40 @@ header label {
 .post-content pre .keyword,
 .post-content pre .javascript .function {
   color: #8959a8;
+}
+html,
+body {
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+.form-group {
+  text-align: center;
+  vertical-align: middle;
+}
+.form-control {
+  width: 50%;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 1px solid #dbdbdb;
+}
+.search-result-list {
+  margin: 25px auto;
+  width: 50%;
+  padding: 0;
+  overflow: hidden;
+}
+.search-result-list a.search-result-title {
+  color: #202020;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+.search-result-list p.search-result {
+  color: #7b7b7b;
+  font-size: 1rem;
+}
+.search-result-list .search-keyword {
+  color: #ff5722;
+  font-weight: bold;
+  font-style: normal;
 }
