@@ -8,11 +8,14 @@ body {
 }
 .form-control {
   width: 50%;
-  height: 30px;
-  margin-top: 20px;
-  border-radius: 5px;
+  height: 40px;
+  margin-top: 50px;
+  border-radius: 2px !important;
   padding-left: 10px;
   border: 1px solid #dbdbdb;
+}
+.form-control:focus {
+  border-color: !important;
 }
 .search-result-list {
   margin: 25px auto;
